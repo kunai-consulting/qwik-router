@@ -3,9 +3,10 @@ import { manifest } from "@qwik-client-manifest";
 import App from "./routes/index";
 
 export default async function render(document: string) {
-  const result = await renderToString(<App />, {
-    containerTagName: "body",
-    manifest,
-  });
-  return document.replace("<!--app-html-->", result.html);
+	const result = await renderToString(<App />, {
+		containerTagName: "body",
+		manifest,
+	});
+
+	return result.html;
 }

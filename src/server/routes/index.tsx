@@ -1,5 +1,11 @@
-import { component$ } from "@qwik.dev/core";
+import { component$, useSignal } from "@qwik.dev/core";
 
 export default component$(() => {
-  return <div>Hello World</div>;
+	const count = useSignal(0);
+
+	return (
+		<button type="button" onClick$={() => count.value++}>
+			{count.value}
+		</button>
+	);
 });

@@ -1,14 +1,13 @@
 {
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "NODE_ENV=production node dist/analog/server/index.mjs"
-  },
-  "devDependencies": {
-    "@qwik.dev/core": "2.0.0-alpha.7",
-    "nitropack": "latest",
-    "@analogjs/vite-plugin-nitro": "^1.13.1"
-  }
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "NODE_ENV=production node dist/analog/server/index.mjs"
+	},
+	"devDependencies": {
+		"@qwik.dev/core": "2.0.0-alpha.7",
+		"nitropack": "latest"
+	}
 }
